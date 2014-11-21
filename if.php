@@ -1,5 +1,7 @@
 <?php
 
+// exercises 3.1.1.
+
 $a = 5;
 $b = 10;
 $c = '10';
@@ -41,7 +43,7 @@ if ($b != $c) {
 
 // output the appropriate result
 if ($b !== $c) {
-    echo "$b is not identical to $c\n";
+    echo "$b is not identical to $c\n \n";
 }
 
 ?>
