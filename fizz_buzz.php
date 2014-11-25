@@ -22,7 +22,7 @@ for ($num = 1; $num <= 100; $num++) {
 
 	else {
 
-	echo $num . PHP_EOL;
+		echo $num . PHP_EOL;
 
 	}
 
