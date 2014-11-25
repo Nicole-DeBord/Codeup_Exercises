@@ -1,6 +1,6 @@
 <?php
 
-// exercise 3.3.3.
+// exercise 3.3.3., part 2
 
 $books = array(
     'The Hobbit' => array(
@@ -29,12 +29,26 @@ $books = array(
 // and values - your output should contain the book's title, then list the
 // key value pairs for the data about each book:
 
+// foreach ($books as $book => $details) {
+// 	echo $book . PHP_EOL; 
+// 		foreach ($details as $detail => $value) {
+// 			echo $detail . ": " . $value . PHP_EOL;
+// 		} 
+// 	echo "\n";
+// } 
+
+
+// *** Update your loop to only show books that were written after 1950:
+
 foreach ($books as $book => $details) {
-	echo $book . PHP_EOL; 
-		foreach ($details as $detail => $value) {
-			echo $detail . ": " . $value . PHP_EOL;
-		} 
-	echo "\n";
+	if ($details['published'] > 1950) {
+		echo $book . PHP_EOL; 	
+			foreach ($details as $detail => $value) {
+				echo $detail . ": " . $value . PHP_EOL;
+			} 
+	}
+		echo "\n";
+			
 } 
 
 ?>
