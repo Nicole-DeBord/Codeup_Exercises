@@ -1,31 +1,34 @@
 <?php
 
-// exercise 3.5., functions, part 1
+// exercise 3.5., a smarter way to do all of this
 
 function add($a, $b) {
-    echo $a + $b;
+    echo $a + $b . PHP_EOL;
 }
 
 function subtract($a, $b) {
-    echo $a - $b;
+    echo $a - $b . PHP_EOL;
 }
 
 function multiply($a, $b) {
-    echo $a * $b;
+    echo $a * $b . PHP_EOL;
 }
 
 function divide($a, $b) {
-    echo $a / $b;
+    echo $a / $b . PHP_EOL;
 }
 
 function modulus($a, $b) {
-	echo $a % $b;
+	echo $a % $b . PHP_EOL;
 }
 
-echo add(10, 5) . PHP_EOL;
-echo subtract(10, 5) . PHP_EOL;
-echo multiply(10, 5) . PHP_EOL;
-echo divide(10, 5) . PHP_EOL;
-echo modulus(10, 5) . PHP_EOL;
+$num1 = 20;
+$num2 = 10;
+
+add($num1, $num2);
+subtract($num1, $num2);
+multiply($num1, $num2);
+divide($num1, $num2);
+modulus($num1, $num2);
 
 ?>
