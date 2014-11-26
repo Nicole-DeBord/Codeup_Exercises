@@ -18,9 +18,14 @@ function divide($a, $b) {
     echo $a / $b;
 }
 
+function modulus($a, $b) {
+	echo $a % $b;
+}
+
 echo add(10, 5) . PHP_EOL;
 echo subtract(10, 5) . PHP_EOL;
 echo multiply(10, 5) . PHP_EOL;
 echo divide(10, 5) . PHP_EOL;
+echo modulus(10, 5) . PHP_EOL;
 
 ?>
