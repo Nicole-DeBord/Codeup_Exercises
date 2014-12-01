@@ -6,8 +6,9 @@ $nothing = null;
 $something = '';
 $array = array(1,2,3);
 
-
 // create a function that checks if a variable is set or empty, and display $variable_name
+
+// unset($something);
 
 function checkSet($variable) {
 	if (isset($variable)) {
@@ -23,28 +24,20 @@ function checkSet($variable) {
 
 // TEST: if var $something is set, display '$something is SET'
 
+
 checkSet($nothing);
 checkSet($something);
-checkSet($array);
 
 
-// Serialize the array $array, and output the results - serialize outputs an array
+// Serialize the array $array, and output the results - fx serialize outputs an array
 // as a string
 
-function serializeArray($variable) {
-	return serialize($variable);
-}
 
-// Unserialize $array, and output the results - unserialize outputs a string as an array
+// Unserialize $array, and output the results - fx unserialize outputs a string as an array
 
-function unserializeArray($variable) {
-	return unserialize($variable);
-}
-
-$serial = serializeArray($array);
+$serial = serialize($array);
 echo $serial . PHP_EOL;
-$unserial = unserializeArray($serial); 
+
+$unserial = unserialize($serial); 
 var_dump($unserial) . PHP_EOL;
-
-
 
