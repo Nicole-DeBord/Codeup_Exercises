@@ -1,6 +1,7 @@
 <?php
 
-// first names
+// My solution to exercise 3.6.2.
+
 $names = ['Tina', 'Bob', 'Mike', 'Amy', 'Adam'];
 
 $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
