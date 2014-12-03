@@ -2,21 +2,20 @@
 
 // Exercise 3.6.4. - Explode and Implode Functions
 
-// Part 1, plus var_dump to see what's going on:
+// Part 2: 
 
 $physicistsString = 'Gordon Freeman, Samantha Carter, Sheldon Cooper, Quinn Mallory, Bruce Banner, Tony Stark';
 
 $physicistsArray = explode(', ', $physicistsString);
 
-var_dump($physicistsArray);
+function humanizedList($array) {
+		$lastPhysicist = array_pop($array);
+		$famousFakePhysicists = implode(', ', $array);
+		return $famousFakePhysicists = "$famousFakePhysicists and $lastPhysicist";
+	}
 
-$lastPhysicist = array_pop($physicistsArray);
+humanizedList($physicistsArray);
 
-$famousFakePhysicists = implode(', ', $physicistsArray);
-
-echo "Some of the most famous fictitious theoreticl physicists are {$famousFakePhysicists}, and {$lastPhysicist}" . PHP_EOL;
+echo "Some of the most famous fictional theoretical physicists are " . humanizedList($physicistsArray) . PHP_EOL;
 
 ?>
-
-
-
